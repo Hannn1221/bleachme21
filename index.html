@@ -63,5 +63,16 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+      // Add a script to handle responsive image loading
+      var images = document.querySelectorAll('.container img');
+      images.forEach(function(image) {
+        var src = image.getAttribute('src');
+        var srcset = src.replace('.jpg', '-small.jpg') + ' 480w, ' + src + ' 800w';
+        image.setAttribute('srcset', srcset);
+      });
+    </script>
   </body>
 </html>
