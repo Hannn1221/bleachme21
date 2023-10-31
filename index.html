@@ -16,18 +16,18 @@
   </head>
   <body>
     <!-- Page Header -->
-    <h1> You Have Shit To Do!! </h1>
+    <h1>You Have Shit To Do!!</h1>
 
-<!-- Image Container -->
-<div class="container">
-  <!-- Images -->
-  <img align="right" src="https://github.com/Hannn1221/bleachme21/blob/main/Images/lady.jpg" alt="lady" width="195" height="280">
-  <img src="https://github.com/Hannn1221/bleachme21/blob/main/Images/lady%202.jpg" alt="lady 2" width="220" height="200">
-  <img src="https://github.com/Hannn1221/bleachme21/blob/main/Images/book.jpg" alt="book" width="180" height="200">
-  <img src="https://github.com/Hannn1221/bleachme21/blob/main/Images/notes.jpg" alt="notes" width="180" height="200">
-  <img src="https://github.com/Hannn1221/bleachme21/blob/main/Images/lady%203.jpg" alt="lady 3" width="180" height="200">
-  <img src="https://github.com/Hannn1221/bleachme21/blob/main/Images/idea.jpg" alt="idea" width="130" height="100">
-</div>
+    <!-- Image Container -->
+    <div class="container">
+      <!-- Images -->
+      <img align="right" src="https://github.com/Hannn1221/bleachme21/raw/main/Images/lady.jpg" alt="lady" width="195" height="280">
+      <img src="https://github.com/Hannn1221/bleachme21/raw/main/Images/lady%202.jpg" alt="lady 2" width="220" height="200">
+      <img src="https://github.com/Hannn1221/bleachme21/raw/main/Images/book.jpg" alt="book" width="180" height="200">
+      <img src="https://github.com/Hannn1221/bleachme21/raw/main/Images/notes.jpg" alt="notes" width="180" height="200">
+      <img src="https://github.com/Hannn1221/bleachme21/raw/main/Images/lady%203.jpg" alt="lady 3" width="180" height="200">
+      <img src="https://github.com/Hannn1221/bleachme21/raw/main/Images/idea.jpg" alt="idea" width="130" height="100">
+    </div>
 
     <!-- Popup Box -->
     <div class="popup-box">
@@ -63,5 +63,16 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+      // Add a script to handle responsive image loading
+      var images = document.querySelectorAll('.container img');
+      images.forEach(function(image) {
+        var src = image.getAttribute('src');
+        var srcset = src.replace('.jpg', '-small.jpg') + ' 480w, ' + src + ' 800w';
+        image.setAttribute('srcset', srcset);
+      });
+    </script>
   </body>
 </html>
