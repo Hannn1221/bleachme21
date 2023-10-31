@@ -24,9 +24,9 @@ To get started with this project, follow these steps:
 
 ## Screenshots
 
-![Dash](screenshots/Dash.jpg)
-![Dash2](screenshots/Dash2.jpg)
-![Add Note](screenshots/Add%20Note.jpg)
+![Dash](Screenshots/Dash.jpg)
+![Dash2](Screenshots/Dash2.jpg)
+![Add Note](Screenshots/Add%20Note.jpg)
 
 ## License
 
