@@ -26,6 +26,13 @@
 
   <!-- JavaScript code -->
   <script>
+    const notes = [
+      { category: 'personal', content: 'Personal Note 1' },
+      { category: 'work', content: 'Work Note 1' },
+      { category: 'personal', content: 'Personal Note 2' },
+      { category: 'work', content: 'Work Note 2' }
+    ];
+
     function search() {
       // Get the search input value
       const searchString = document.getElementById('searchInput').value.toLowerCase();
@@ -41,21 +48,17 @@
       }
 
       // Perform the search based on the search string and selected category
-      const searchResults = [];
-      if (selectedCategory === 'personal') {
-        // Search personal category
-        // Add matching results to the searchResults array
-      } else if (selectedCategory === 'work') {
-        // Search work category
-        // Add matching results to the searchResults array
-      }
+      const searchResults = notes.filter(note =>
+        note.content.toLowerCase().includes(searchString) &&
+        note.category === selectedCategory
+      );
 
       // Display the search results
       const searchResultsDiv = document.getElementById('searchResults');
       searchResultsDiv.innerHTML = '';
       for (const result of searchResults) {
         const resultElement = document.createElement('p');
-        resultElement.textContent = result;
+        resultElement.textContent = result.content;
         searchResultsDiv.appendChild(resultElement);
       }
     }
