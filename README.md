@@ -1,4 +1,4 @@
-# Blocky | Your Everyday Journal
+# You Have Shit To Do!!
 
 This is a simple webpage for your everyday journal. It allows you to add and manage notes in a user-friendly interface.
 
