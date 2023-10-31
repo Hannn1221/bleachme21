@@ -24,7 +24,7 @@ To get started with this project, follow these steps:
 
 ## Screenshots
 
-![Dash 1](Screenshots/Dash1.jpg)
+![Dash 1]([Screenshots/Dash1.jpg](https://github.com/Hannn1221/bleachme21/blob/main/Screenshots/Dash%201.jpg))
 ![Dash 2](Screenshots/Dash2.jpg)
 
 
