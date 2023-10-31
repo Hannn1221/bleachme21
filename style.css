@@ -1,32 +1,44 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/* Header Styles */
 h1 {
-    justify-content: center;
+  justify-content: center;
   color:white;
-    line-height: 150px; 
-    text-align: center;
-    font-family: 'Open Sans';font-size: 55px;
-    }    
-    
+  line-height: 150px; 
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 55px;
+}
+
+/* Body Styles */
 body{
   background: #cfc1ff;
 }
+
+/* Selection Styles */
 ::selection{
   color: #fff;
   background: #618cf8;
 }
+
+/* Wrapper Styles */
 .wrapper{
   margin: 50px;
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fill, 265px);
 }
+
+/* List Styles */
 .wrapper li{
   height: 250px;
   list-style: none;
@@ -35,17 +47,22 @@ body{
   background: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
-.add-box, .icon, .bottom-content, 
-.popup, header, .settings .menu li{
+
+/* Add Box Styles */
+.add-box, .icon, .bottom-content, .popup, header, .settings .menu li{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+/* Add Box Styles */
 .add-box{
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
 }
+
+/* Add Box Icon Styles */
 .add-box .icon{
   height: 78px;
   width: 78px;
@@ -55,64 +72,88 @@ body{
   justify-content: center;
   border: 2px dashed #88ABFF;
 }
+
+/* Add Box Text Styles */
 .add-box p{
   color: #88ABFF;
   font-weight: 500;
   margin-top: 20px;
 }
+
+/* Note Styles */
 .note{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Note Details Styles */
 .note .details{
   max-height: 165px;
   overflow-y: auto;
 }
-.note .details::-webkit-scrollbar,
-.popup textarea::-webkit-scrollbar{
+
+/* Scrollbar Styles */
+.note .details::-webkit-scrollbar, .popup textarea::-webkit-scrollbar{
   width: 0;
 }
-.note .details:hover::-webkit-scrollbar,
-.popup textarea:hover::-webkit-scrollbar{
+
+/* Scrollbar Hover Styles */
+.note .details:hover::-webkit-scrollbar, .popup textarea:hover::-webkit-scrollbar{
   width: 5px;
 }
-.note .details:hover::-webkit-scrollbar-track,
-.popup textarea:hover::-webkit-scrollbar-track{
+
+/* Scrollbar Track Hover Styles */
+.note .details:hover::-webkit-scrollbar-track, .popup textarea:hover::-webkit-scrollbar-track{
   background: #f1f1f1;
   border-radius: 25px;
 }
-.note .details:hover::-webkit-scrollbar-thumb,
-.popup textarea:hover::-webkit-scrollbar-thumb{
+
+/* Scrollbar Thumb Hover Styles */
+.note .details:hover::-webkit-scrollbar-thumb, .popup textarea:hover::-webkit-scrollbar-thumb{
   background: #e6e6e6;
   border-radius: 25px;
 }
+
+/* Note Text Styles */
 .note p{
   font-size: 22px;
   font-weight: 500;
 }
+
+/* Note Span Styles */
 .note span{
   display: block;
   color: #575757;
   font-size: 16px;
   margin-top: 5px;
 }
+
+/* Bottom Content Styles */
 .note .bottom-content{
   padding-top: 10px;
   border-top: 1px solid #ccc;
 }
+
+/* Bottom Content Span Styles */
 .bottom-content span{
   color: #6D6D6D;
   font-size: 14px;
 }
+
+/* Settings Styles */
 .bottom-content .settings{
   position: relative;
 }
+
+/* Settings Icon Styles */
 .bottom-content .settings i{
   color: #6D6D6D;
   cursor: pointer;
   font-size: 15px;
 }
+
+/* Settings Menu Styles */
 .settings .menu{
   z-index: 1;
   bottom: 0;
@@ -126,9 +167,13 @@ body{
   box-shadow: 0 0 6px rgba(0,0,0,0.15);
   transition: transform 0.2s ease;
 }
+
+/* Settings Show Menu Styles */
 .settings.show .menu{
   transform: scale(1);
 }
+
+/* Settings Menu List Styles */
 .settings .menu li{
   height: 25px;
   font-size: 16px;
@@ -139,16 +184,23 @@ body{
   border-radius: 0;
   justify-content: flex-start;
 }
+
+/* Menu List Last Child Styles */
 .menu li:last-child{
   margin-bottom: 0;
 }
+
+/* Menu List Hover Styles */
 .menu li:hover{
   background: #f5f5f5;
 }
+
+/* Menu List Icon Styles */
 .menu li i{
   padding-right: 8px;
 }
 
+/* Popup Box Styles */
 .popup-box{
   position: fixed;
   top: 0;
@@ -158,6 +210,8 @@ body{
   width: 100%;
   background: rgba(0,0,0,0.4);
 }
+
+/* Popup Box Popup Styles */
 .popup-box .popup{
   position: absolute;
   top: 50%;
@@ -168,48 +222,70 @@ body{
   justify-content: center;
   transform: translate(-50%, -50%) scale(0.95);
 }
+
+/* Popup Box Transition Styles */
 .popup-box, .popup{
   opacity: 0;
   pointer-events: none;
   transition: all 0.25s ease;
 }
+
+/* Popup Box Show Styles */
 .popup-box.show, .popup-box.show .popup{
   opacity: 1;
   pointer-events: auto;
 }
+
+/* Popup Box Show Popup Styles */
 .popup-box.show .popup{
   transform: translate(-50%, -50%) scale(1);
 }
+
+/* Popup Content Styles */
 .popup .content{
   border-radius: 5px;
   background: #fff;
   width: calc(100% - 15px);
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
+
+/* Content Header Styles */
 .content header{
   padding: 15px 25px;
   border-bottom: 1px solid #ccc;
 }
+
+/* Content Header Text Styles */
 .content header p{
   font-size: 20px;
   font-weight: 500;
 }
+
+/* Content Header Icon Styles */
 .content header i{
   color: #8b8989;
   cursor: pointer;
   font-size: 23px;
 }
+
+/* Content Form Styles */
 .content form{
   margin: 15px 25px 35px;
 }
+
+/* Form Row Styles */
 .content form .row{
   margin-bottom: 20px;
 }
+
+/* Form Row Label Styles */
 form .row label{
   font-size: 18px;
   display: block;
   margin-bottom: 6px;
 }
+
+/* Form Input and Textarea Styles */
 form :where(input, textarea){
   height: 50px;
   width: 100%;
@@ -219,14 +295,20 @@ form :where(input, textarea){
   border-radius: 4px;
   border: 1px solid #999;
 }
+
+/* Form Input and Textarea Focus Styles */
 form :where(input, textarea):focus{
   box-shadow: 0 2px 4px rgba(0,0,0,0.11);
 }
+
+/* Form Row Textarea Styles */
 form .row textarea{
   height: 150px;
   resize: none;
   padding: 8px 15px;
 }
+
+/* Form Button Styles */
 form button{
   width: 100%;
   height: 50px;
@@ -239,6 +321,7 @@ form button{
   background: #6A93F8;
 }
 
+/* Media Query for max-width 660px */
 @media (max-width: 660px){
   .wrapper{
     margin: 15px;
@@ -252,3 +335,4 @@ form button{
     font-size: 17px;
   }
 }
+
