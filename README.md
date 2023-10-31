@@ -24,8 +24,9 @@ To get started with this project, follow these steps:
 
 ## Screenshots
 
-![Dash 1](https://github.com/Hannn1221/bleachme21/blob/main/Dash%202.jpg)
-![Dash 2](https://github.com/Hannn1221/bleachme21/blob/main/Dash%202.jpg)
+![Dash 1](https://github.com/Hannn1221/bleachme21/raw/main/Screenshots/Dash%201.jpg)
+
+![Dash 2](https://github.com/Hannn1221/bleachme21/raw/main/Screenshots/Dash%202.jpg)
 
 
 ## License
