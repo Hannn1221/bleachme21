@@ -2,6 +2,8 @@
 
 This is a simple webpage for your everyday journal. It allows you to add and manage notes in a user-friendly interface.
 
+Website: [https://hannn1221.github.io/bleachme21/](https://hannn1221.github.io/bleachme21/)
+
 ## Features
 
 - Add new notes with a title and description.
